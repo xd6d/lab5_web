@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Artem Kurkin">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="styles.css" rel="stylesheet">
+    <title>Lab №5</title>
+    <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript" src="ua_en.js"></script>
+</head>
+<body>
+<h3>Завдання 1</h3>
+<form name="form1">
+    <table>
+        <tr>
+            <td>Довжина:</td>
+            <td><label>
+                <input type="number" name="length" oninput="task1(form1)" step="any">
+            </label></td>
+        </tr>
+        <tr>
+            <td>Ширина:</td>
+            <td><label>
+                <input type="number" name="width" oninput="task1(form1)" step="any">
+            </label></td>
+        </tr>
+        <tr>
+            <td>Периметр:</td>
+            <td><label>
+                <input type="number" name="p" disabled step="any">
+            </label></td>
+        </tr>
+        <tr>
+            <td>Площа:</td>
+            <td><label>
+                <input type="number" name="s" disabled step="any">
+            </label></td>
+        </tr>
+        <tr>
+            <td>Довжина діагоналі:</td>
+            <td><label>
+                <input type="number" name="d" disabled step="any">
+            </label></td>
+        </tr>
+    </table>
+</form>
+<h3>Завдання 2</h3>
+<div class="task2">
+    <script>task2()</script>
+</div>
+<h3>Завдання 3</h3>
+<label>
+    <textarea cols="70" rows="10" id="ua" oninput="task3()"></textarea>
+</label>
+<br>
+<label>
+    <textarea cols="70" rows="10" id="en" readonly></textarea>
+</label>
+<h3>Завдання 4</h3>
+<form>
+    <label>
+        <input type="date" onchange="task4()" id="date">
+    </label>
+    <label>
+        <p id="weekday"></p>
+    </label>
+</form>
+</body>
+</html>
