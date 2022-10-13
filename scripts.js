@@ -5,7 +5,18 @@ function task1(obj) {
         obj.p.value = ""
         obj.s.value = ""
         obj.d.value = ""
+        if (l <= 0)
+            obj.length.style = "color: red;"
+        else
+            obj.length.style = ""
+        if (w <= 0)
+            obj.width.style = "color: red;"
+        else {
+            obj.width.style = ""
+        }
     } else {
+        obj.length.style = ""
+        obj.width.style = ""
         obj.p.value = (l + w) * 2
         obj.s.value = (l * w)
         obj.d.value = ((l ** 2 + w ** 2) ** (1 / 2)).toFixed(3)
